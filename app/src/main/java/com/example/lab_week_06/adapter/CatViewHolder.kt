@@ -19,11 +19,16 @@ class CatViewHolder(
     private val onClickListener: CatAdapter.OnClickListener
 ) : RecyclerView.ViewHolder(containerView) {
 
-    private val catBiographyView: TextView = containerView.findViewById(R.id.cat_biography)
-    private val catBreedView: TextView = containerView.findViewById(R.id.cat_breed)
-    private val catGenderView: TextView = containerView.findViewById(R.id.cat_gender)
-    private val catNameView: TextView = containerView.findViewById(R.id.cat_name)
-    private val catPhotoView: ImageView = containerView.findViewById(R.id.cat_photo)
+    private val catPhotoView: ImageView =
+        containerView.findViewById(R.id.cat_photo)
+    private val catNameView: TextView =
+        containerView.findViewById(R.id.cat_name)
+    private val catBreedView: TextView =
+        containerView.findViewById(R.id.cat_breed)
+    private val catBiographyView: TextView =
+        containerView.findViewById(R.id.cat_biography)
+    private val catGenderView: TextView =
+        containerView.findViewById(R.id.cat_gender)
 
     fun bindData(cat: CatModel) {
 
